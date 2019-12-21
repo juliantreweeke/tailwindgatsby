@@ -40,7 +40,7 @@ function IndexPage() {
             }}
           >
             <section alt="blue mountains scenery" 
-              className="py-32 absolute bg-no-repeat bg-cover bg-x-50% bg-black bg-top w-screen text-center sm:text-left" style={{ backgroundImage: `url(${BlueMountainsHeaderImage})`}}>
+              className="pt-20 pb-20 absolute bg-no-repeat bg-cover bg-x-50% bg-black bg-top w-screen text-center sm:text-left" style={{ backgroundImage: `url(${BlueMountainsHeaderImage})`}}>
               <div className="px-16 py-4 text-white">
                 <p className="text-6xl max-w-sm headerFont">website design/</p>
                 <p className="text-6xl max-w-xl headerFont">content creation/</p>
@@ -51,6 +51,7 @@ function IndexPage() {
           </Tween>
         </Timeline>
       </Scene>
+
       <Scene
         duration="80%"
         offset={200}

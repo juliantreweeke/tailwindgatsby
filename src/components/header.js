@@ -54,15 +54,11 @@ function Header() {
           {[
             {
               route: `/`,
-              title: `Home`
+              title: `HOME`
             },
             {
-              route: `/about`,
-              title: `About`
-            },
-            {
-              route: `/contact`,
-              title: `Contact`
+              route: `/services`,
+              title: `SERVICES`
             }
           ].map(link => (
             <Link
@@ -73,6 +69,14 @@ function Header() {
               {link.title}
             </Link>
           ))}
+            <Link
+              className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white"
+              key={`GET A QUOTE`}
+              to={`/quote`}
+            >
+            GET A QUOTE
+            </Link>
+
         </nav>
       </div>
       </div>

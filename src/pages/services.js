@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import dogIllustration from "../images/dog-illustration.svg";
 
-function AboutPage() {
+function ServicesPage() {
   return (
     <Layout>
       <SEO
@@ -35,4 +35,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default ServicesPage;
