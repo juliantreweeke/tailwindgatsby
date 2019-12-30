@@ -57,7 +57,7 @@ function Header() {
                 title: `HOME`
               },
               {
-                route: `/services`,
+                route: `#services`,
                 title: `SERVICES`
               }
             ].map(link => (
@@ -70,7 +70,7 @@ function Header() {
               </Link>
             ))}
             <Link
-              className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white"
+              className=" text-center block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white bg-red p-2 rounded w-40"
               key={`GET A QUOTE`}
               to={`/quote`}
             >

@@ -30,23 +30,65 @@ function QuotePage() {
             className="bg-black mb-8 shadow appearance-none rounded border w-full py-2 px-3 text-grey leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Phone Number" />
 
           <p className="leading-loose mb-6 text-grey">
-            Project Details
+            Project details
           </p>
-
-          <div className="mb-16 w-full bg-black">
-            <label className="text-grey w-full sm:w-1/4 mr-16">
-              <input className="mr-2 leading-tight bg-black border" type="checkbox" />
-              <span>
-                Web Design
-              </span>
-            </label>
-            <label className="text-grey w-full sm:w-1/4">
-              <input className="mr-2 leading-tight bg-black border" type="checkbox" />
-              <span>
-                Web Review
-              </span>
-            </label>
+          <div className="mb-8" >
+            <div className="flex flex-wrap  w-full">
+              <label className="text-grey w-full lg:w-1/2 mb-4">
+                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <span>
+                  Web Design
+                </span>
+              </label>
+              <label className="text-grey w-full lg:w-1/2 mb-4">
+                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <span>
+                  Web Review
+                </span>
+              </label>
+            </div>
+            <div className="flex flex-wrap  w-full">
+              <label className="text-grey w-full lg:w-1/2 mb-4">
+                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <span>
+                  Mobile Design
+                </span>
+              </label>
+              <label className="text-grey w-full lg:w-1/2 mb-4">
+                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <span>
+                  Copywriting
+                </span>
+              </label>
+            </div>
+            <div className="flex flex-wrap  w-full">
+              <label className="text-grey w-full lg:w-1/2 mb-4">
+                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <span>
+                  Social Media
+                </span>
+              </label>
+              <label className="text-grey w-full lg:w-1/2 mb-4">
+                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <span>
+                  UX/UI
+                </span>
+              </label>
+            </div>
           </div>
+
+          {/* <div className="flex flex-wrap -mx-16 justify-center">
+            <div className="w-full lg:w-1/2 px-16 py-12 max-w-lg">
+              <div className="bg-white h-lg">
+                <p className="py-12 w-32">WEBSITES & MOBILE APPS</p>
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 px-16 py-12 max-w-lg">
+              <div className="bg-white h-lg">
+                <p className="py-12">UX UI DESIGN</p>
+              </div>
+            </div>
+          </div> */}
 
           <textarea
             aria-label="additional comments"

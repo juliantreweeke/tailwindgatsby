@@ -84,7 +84,6 @@ function IndexPage() {
                   We will save you time so that you can get down to the busines of running your business.
               </p>
               </div>
-
             </section>
           </Tween>
         </Scene>
@@ -139,7 +138,7 @@ function IndexPage() {
             </section>
           </Tween>
         </Scene>
-        <section className="bg-black px-32 py-12 text-center text-xl">
+        <section id="services" className="bg-black px-32 py-12 text-center text-xl">
           <div className="flex flex-wrap -mx-16 justify-center">
             <div className="w-full lg:w-1/2 px-16 py-12 max-w-lg">
               <div className="bg-white h-lg">
