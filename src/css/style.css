@@ -36,13 +36,13 @@ html {
   width: 100%;
 }
 
-.bg-x-60 {
-  background-size: '100% 60%' !important;
+/* .bg-x-60 {
+  background-size: '100% 100%' !important;
 }
 
 .headerImage {
   @apply bg-no-repeat bg-x-60 bg-top w-screen bg-black text-center;
-}
+} */
 
 @tailwind components;
 @tailwind utilities;
