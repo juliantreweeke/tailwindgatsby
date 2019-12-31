@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import Header from "./header";
+import SiteTitle from "./siteTitle";
 
 function Layout({ children }) {
   return (
@@ -11,10 +12,8 @@ function Layout({ children }) {
         {children}
       </main>
       <footer className="bg-black">
-        <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
-          <p className="text-white">
-            Studio new 2020
-          </p>
+        <nav className="flex justify-between ml-16 mr-16 mx-auto py-2 md:py-2 text-sm">
+          <SiteTitle year="true" />
           <p>
             <a
               className="font-bold no-underline text-white"

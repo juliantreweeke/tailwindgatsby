@@ -1,36 +1,19 @@
 
-/* @import url('https://fonts.googleapis.com/css?family=Roboto');
-
-html {
-  font-family: 'Roboto', sans-serif !important;
-} */
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 @tailwind base;
 
-/* 
-.squiggle {
-        height:100px;
-        width:100px;
-        border-image: url('../images/squiggle.png') 0 0 5 0;
-        -webkit-border-image: url('../images/squiggle.png') 0 0 5 0;
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        /* border-bottom:8px; */
-/* } */ 
 
-/* .squiggle:after {
-    content: "";
-    display: block;
-    height: 70px;
-    background-image: url('../images/squiggle.png');
-    background-repeat: no-repeat;
-    background-position:  bottom;
-} */
 
+.min-height-210 {
+  min-height:210px;
+}
+
+.h-custom {
+  height:300px;
+}
 
 .squiggle {
     padding-bottom: 8px;
@@ -83,13 +66,6 @@ html {
   width: 100%;
 }
 
-/* .bg-x-60 {
-  background-size: '100% 100%' !important;
-}
-
-.headerImage {
-  @apply bg-no-repeat bg-x-60 bg-top w-screen bg-black text-center;
-} */
 
 @tailwind components;
 @tailwind utilities;

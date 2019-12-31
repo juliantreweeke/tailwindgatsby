@@ -13,6 +13,9 @@ import Grays from "../images/graysonlinelogo.jpeg";
 import Hireup from "../images/hireup.brand.jpg";
 import Squiggle from "../images/squiggle.png";
 import DownArrow from "../images/downarrow.png";
+import SocialMedia from "../images/socialmedia.jpg";
+import Website from "../images/website2.png";
+import UX from "../images/ux3.png";
 
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
@@ -45,7 +48,7 @@ function IndexPage() {
               <section alt="blue mountains scenery"
                 className="pt-20 pb-20 absolute bg-no-repeat bg-cover bg-black w-screen text-center sm:text-left" style={{ backgroundImage: `url(${BlueMountainsHeaderImage1})` }}>
                 <div className="ml-16 mr-16 text-white">
-                  <p className="text-6xl max-w-sm headerFont">website design/</p>
+                  <h1 className="text-6xl max-w-sm headerFont">website design/</h1>
                   <p className="text-6xl max-w-xl headerFont">content creation/</p>
                   <p className="text-6xl max-w-sm headerFont">& tech support</p>
                   <div className="py-12">
@@ -78,11 +81,12 @@ function IndexPage() {
             }}
           >
             <section className=" w-screen bg-black">
-              <div className="flex flex-wrap justify-center py-48 px-16 text-white text-sm paragraphFont text-center lg:text-left max-w">
+              <div className="flex flex-wrap justify-center pt-48 pb-48 text-white text-sm paragraphFont text-center lg:text-left max-w">
                 <div className="w-full lg:w-1/3">
                   <img className="block ml-auto mr-auto rounded-full h-64" src={HeadShot} alt="picture of amanda" />
                 </div>
-                <div className="w-full lg:w-1/2 mt-16">
+                <div className="w-full lg:w-1/2 mt-6 lg:max-w-full max-w-lg">
+                  <h2 className="mb-8 text-4xl font-medium text-white">A bit about us...</h2>
                   <p className="mb-4">
                     Based in the Blue Mountains of Sydney we are a team of creative and designers, developers and content creators.
                   </p>
@@ -118,7 +122,7 @@ function IndexPage() {
             }}
           >
             <section className="pb-16 px-8 w-screen py- overflow-hidden bg-white">
-              <p className="p-16 lg:pt-24 text-4xl text-center font-medium">Clients we have helped include</p>
+              <h2 className="p-16 lg:pt-24 text-4xl text-center font-medium">Clients we have helped include</h2>
 
               <div className="px-16 flex flex-wrap overflow-hidden justify-center">
                 <div className="smallImgContainer lg:w-1/4 h-40">
@@ -149,42 +153,64 @@ function IndexPage() {
             </section>
           </Tween>
         </Scene>
-        <section id="services" className="bg-black text-center text-xl">
-          <div className="flex flex-wrap justify-center">
-            <div className="w-full lg:w-1/3  border">
-              <div className="bg-white h-lg">
-                <p className="py-12 w-32">WEBSITES & MOBILE APPS</p>
+        <Scene
+          duration="60%"
+          offset={200}
+          triggerHook="onEnter"
+        >
+          <Tween
+            from={{
+              css: {
+                opacity: `0.1`,
+              },
+              ease: `Circ.easeOutExpo`,
+            }}
+            to={{
+              css: {
+                opacity: `1`,
+              },
+              ease: `Circ.easeOutExpo`,
+            }}
+          >
+            <section id="services" className="pt-16 bg-black text-white text-center text-2xl">
+              <h2 className=" mb-16 text-4xl text-center font-medium ">Services we offer</h2>
+              <div className="flex flex-wrap justify-center ml-auto mr-auto lg:mr-16 lg:ml-16 max-w-sm lg:max-w-full">
+                <div className="w-full lg:w-1/3 bg-red h-custom">
+                  <div className="pt-12 min-height-210">
+                    <p>WEBSITE DESIGN</p>
+                    <p>& DEVELOPMENT</p>
+                  </div>
+                  <a className="w-full bg-black rounded px-16 py-2 text-xl" href="https://www.dysphemic.com/music/" target="_blank">View</a>
+                </div>
+                <div className="w-full lg:w-1/3 bg-black h-custom">
+                  <img src={Website} className="h-full w-full" alt="Website Image" />
+                </div>
+                <div className="w-full lg:w-1/3 bg-pink h-custom">
+                  <div className="pt-12 min-height-210">
+                    <p>UX/UI DESIGN</p>
+                  </div>
+                  <a className="w-full bg-black rounded px-16 py-2 text-xl" href="https://thehappydoggo.com/" target="_blank">View</a>
+
+                </div>
               </div>
-            </div>
-            <div className="w-full lg:w-1/3  border">
-              <div className="bg-white h-lg">
-                <p className="py-12">UX UI DESIGN</p>
+              <div className="flex flex-wrap justify-center ml-auto mr-auto lg:mr-16 lg:ml-16 max-w-sm lg:max-w-full">
+                <div className="w-full lg:w-1/3 h-custom">
+                  <img src={UX} className="h-full w-full" alt="Website Image" />
+                </div>
+                <div className="w-full bg-grey lg:w-1/3 h-custom">
+                  <div className="pt-12 min-height-210">
+                    <p>SOCIAL MEDIA CONTENT</p>
+                    <p>& MANAGEMENT</p>
+                  </div>
+                  <a className="w-full bg-black rounded px-16 py-2 text-xl" href="https://www.facebook.com/Dysphemicmusic/" target="_blank">View</a>
+                </div>
+                <div className="w-full lg:w-1/3 h-custom">
+                  <img src={SocialMedia} className="h-full w-full" alt="Social Media Image" />
+                </div>
               </div>
-            </div>
-            <div className="w-full lg:w-1/3  border">
-              <div className="bg-white h-lg">
-                <p className="py-12">UX UI DESIGN</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-wrap justify-center">
-            <div className="w-full lg:w-1/3  border">
-              <div className="bg-white h-lg">
-                <p className="py-12">SOCIAL MEDIA</p>
-              </div>
-            </div>
-            <div className="w-full lg:w-1/3  border">
-              <div className="bg-white h-lg">
-                <p className="py-12">CONTENT & COPYWRITING</p>
-              </div>
-            </div>
-            <div className="w-full lg:w-1/3 border">
-              <div className="bg-white h-lg">
-                <p className="py-12">CONTENT & COPYWRITING</p>
-              </div>
-            </div>
-          </div>
-        </section>
+            </section>
+          </Tween>
+        </Scene>
       </Controller>
     </Layout>
   );
