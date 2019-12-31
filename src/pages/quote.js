@@ -19,14 +19,17 @@ function QuotePage() {
 
           <input
             aria-label="Name"
+            name="name"
             className="bg-black mb-8 shadow appearance-none rounded border w-full py-2 px-3 text-grey leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Name" />
 
           <input
             aria-label="Email"
+            name="email"
             className="bg-black mb-8 shadow appearance-none rounded border w-full py-2 px-3 text-grey leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Email" />
 
           <input
             aria-label="Phone Number"
+            name="phone number"
             className="bg-black mb-8 shadow appearance-none rounded border w-full py-2 px-3 text-grey leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Phone Number" />
 
           <p className="leading-loose mb-6 text-grey">
@@ -35,13 +38,13 @@ function QuotePage() {
           <div className="mb-8" >
             <div className="flex flex-wrap  w-full">
               <label className="text-grey w-full lg:w-1/2 mb-4">
-                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <input name="web design" className="mr-2 leading-tight bg-black border" type="checkbox" />
                 <span>
                   Web Design
                 </span>
               </label>
               <label className="text-grey w-full lg:w-1/2 mb-4">
-                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <input name="web review" className="mr-2 leading-tight bg-black border" type="checkbox" />
                 <span>
                   Web Review
                 </span>
@@ -49,13 +52,13 @@ function QuotePage() {
             </div>
             <div className="flex flex-wrap  w-full">
               <label className="text-grey w-full lg:w-1/2 mb-4">
-                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <input name="mobile design" className="mr-2 leading-tight bg-black border" type="checkbox" />
                 <span>
                   Mobile Design
                 </span>
               </label>
               <label className="text-grey w-full lg:w-1/2 mb-4">
-                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <input name="copywriting" className="mr-2 leading-tight bg-black border" type="checkbox" />
                 <span>
                   Copywriting
                 </span>
@@ -63,13 +66,13 @@ function QuotePage() {
             </div>
             <div className="flex flex-wrap  w-full">
               <label className="text-grey w-full lg:w-1/2 mb-4">
-                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <input name="social media" className="mr-2 leading-tight bg-black border" type="checkbox" />
                 <span>
                   Social Media
                 </span>
               </label>
               <label className="text-grey w-full lg:w-1/2 mb-4">
-                <input className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <input name="UX/UI" className="mr-2 leading-tight bg-black border" type="checkbox" />
                 <span>
                   UX/UI
                 </span>
@@ -79,6 +82,7 @@ function QuotePage() {
 
           <textarea
             aria-label="additional comments"
+            name="additional comments"
             className="bg-black appearance-none shadow leading-tight mb-6 py-2 px-3 rounded border text-grey w-full"
             id="message"
             placeholder="Additional comments.."

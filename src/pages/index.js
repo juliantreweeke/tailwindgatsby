@@ -85,16 +85,16 @@ function IndexPage() {
                 <div className="w-full lg:w-1/3">
                   <img className="block ml-auto mr-auto rounded-full h-64" src={HeadShot} alt="picture of amanda" />
                 </div>
-                <div className="w-full lg:w-1/2 mt-6 lg:max-w-full max-w-lg">
+                <div className="w-full lg:w-1/2 mt-6 lg:max-w-full max-w-sm">
                   <h2 className="mb-8 text-4xl font-medium text-white">A bit about us...</h2>
                   <p className="mb-4">
-                    Based in the Blue Mountains of Sydney we are a team of creative and designers, developers and content creators.
+                    Based in the Blue Mountains of Sydney we are a team of creative designers, developers and content creators.
                   </p>
                   <p className="mb-4">
-                    Extensive experience across agency, startup and the corporate sector come together to benefit our clients no matter what the project requires.
+                    Extensive experience across agency, startup and the corporate sector come together to benefit you, no matter what your project requires.
                   </p>
                   <p className="mb-4">
-                    We will save you time so that you can get down to the business of running your business.
+                    We will save you time creating a seamless and professional digital experience so that you can get down to the business, of running your business.
                   </p>
                   <img className="w-20 rotate180 mr-auto ml-auto block" src={Squiggle} alt="squiggle icon" />
                 </div>

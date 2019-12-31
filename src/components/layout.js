@@ -11,7 +11,7 @@ function Layout({ children }) {
       <main className="main flex flex-col flex-1 md:justify-center mx-auto w-full">
         {children}
       </main>
-      <footer className="bg-black">
+      <footer className="bg-black hidden lg:block">
         <nav className="flex ml-16 mr-16 mx-auto py-2 md:py-2 text-sm">
           <SiteTitle footer year />
           <div className="pl-16 leading-loose">
