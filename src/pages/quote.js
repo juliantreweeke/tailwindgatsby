@@ -11,7 +11,7 @@ function QuotePage() {
         title="Contact"
       />
       <section className="bg-black w-screen ">
-        <form className="mx-auto w-1/2 md:w-1/4 mb-4 ">
+        <form name="quote" className="mx-auto w-1/2 md:w-1/4 mb-4" netlify>
           <h1 className="text-center text-pink text-3xl mb-8">Get a Quote</h1>
           <p className="leading-loose mb-6 text-grey">
             Your details
@@ -77,19 +77,6 @@ function QuotePage() {
             </div>
           </div>
 
-          {/* <div className="flex flex-wrap -mx-16 justify-center">
-            <div className="w-full lg:w-1/2 px-16 py-12 max-w-lg">
-              <div className="bg-white h-lg">
-                <p className="py-12 w-32">WEBSITES & MOBILE APPS</p>
-              </div>
-            </div>
-            <div className="w-full lg:w-1/2 px-16 py-12 max-w-lg">
-              <div className="bg-white h-lg">
-                <p className="py-12">UX UI DESIGN</p>
-              </div>
-            </div>
-          </div> */}
-
           <textarea
             aria-label="additional comments"
             className="bg-black appearance-none shadow leading-tight mb-6 py-2 px-3 rounded border text-grey w-full"
@@ -98,7 +85,7 @@ function QuotePage() {
             rows="8"
           />
 
-          <button className=" bg-red hover:bg-red-100 font-bold px-4 py-2 rounded w-full text-sm text-white">
+          <button type="submit" className=" bg-red hover:bg-red-100 font-bold px-4 py-2 rounded w-full text-sm text-white">
             SEND
           </button>
         </form>
