@@ -11,7 +11,7 @@ function QuotePage() {
         title="Contact"
       />
       <section className="bg-black w-screen ">
-        <form name="quote" className="mx-auto w-1/2 md:w-1/4 mb-4" netlify>
+        <form name="quote" className="mx-auto w-1/2 md:w-1/4 mb-4" method="POST" data-netlify="true">
           <h1 className="text-center text-pink text-3xl mb-8">Get a Quote</h1>
           <p className="leading-loose mb-6 text-grey">
             Your details
