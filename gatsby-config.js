@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Studio nu website`,
+    title: `studio nu`,
     description: `Website for Studio nu`,
     author: `Studio bu`
   },
@@ -15,7 +15,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        icon: `src/images/diamond.png`
       }
     },
     `gatsby-plugin-postcss`,

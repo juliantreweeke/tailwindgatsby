@@ -6,7 +6,39 @@ html {
 } */
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
 @tailwind base;
+
+/* 
+.squiggle {
+        height:100px;
+        width:100px;
+        border-image: url('../images/squiggle.png') 0 0 5 0;
+        -webkit-border-image: url('../images/squiggle.png') 0 0 5 0;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        /* border-bottom:8px; */
+/* } */ 
+
+/* .squiggle:after {
+    content: "";
+    display: block;
+    height: 70px;
+    background-image: url('../images/squiggle.png');
+    background-repeat: no-repeat;
+    background-position:  bottom;
+} */
+
+
+.squiggle {
+    padding-bottom: 8px;
+    background-image: url('../images/squiggle.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 40px;
+}
 
 .parallax {
   height: 100vh;
@@ -18,9 +50,20 @@ html {
   height:350px;
 }
 
-.smallImgContainer {
-    @apply flex px-4 overflow-hidden h-40 justify-center items-center text-center; 
+.rotate180 {
+  -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+  -moz-transform: rotate(180deg);        /* FF */
+  -o-transform: rotate(180deg);          /* Opera */
+  -ms-transform: rotate(180deg);         /* IE9 */
+  transform: rotate(180deg);             /* W3C compliant browsers */
+  /* IE8 and below */
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=0, M21=0, M22=-1, DX=0, DY=0, SizingMethod='auto expand');
 }
+
+.smallImgContainer {
+    @apply flex px-4 overflow-hidden justify-center items-center text-center; 
+}
+
 
 .smallImg {
     @apply w-40;
@@ -28,6 +71,10 @@ html {
 
 .headerFont {
     font-family: 'DM Serif Display', serif;
+}
+
+.paragraphFont {
+  font-family: 'Nunito', sans-serif;
 }
 
 .sticky {
