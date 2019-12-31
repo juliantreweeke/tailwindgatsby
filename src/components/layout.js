@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import React from "react";
-
 import Header from "./header";
 import SiteTitle from "./siteTitle";
+import Email from '../images/email.png';
 
 function Layout({ children }) {
   return (
@@ -12,16 +12,18 @@ function Layout({ children }) {
         {children}
       </main>
       <footer className="bg-black">
-        <nav className="flex justify-between ml-16 mr-16 mx-auto py-2 md:py-2 text-sm">
-          <SiteTitle year="true" />
-          <p>
+        <nav className="flex ml-16 mr-16 mx-auto py-2 md:py-2 text-sm">
+          <SiteTitle footer year />
+          <div className="pl-16 leading-loose">
+            <img src={Email} className="w-4 inline-block mr-2 pb-1" alt="email icon" />
             <a
-              className="font-bold no-underline text-white"
-              href="#"
+              className="pt-4 no-underline text-white paragraphFont text-sm"
+              href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=thestudiobloom.com"
+              target="_blank"
             >
-              Email
-            </a>
-          </p>
+              info@thestudiobloom.com
+          </a>
+          </div>
         </nav>
       </footer>
     </div>
