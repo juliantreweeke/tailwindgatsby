@@ -1,8 +1,8 @@
 {
   "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
+  "description": "Gatsby with Tailwind",
   "version": "3.0.141",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "author": "Julian Treweeke",
   "dependencies": {
     "gatsby": "2.18.10",
     "gatsby-plugin-manifest": "2.2.31",

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `studio bloom`,
-    description: `Website for Studio nu`,
-    author: `Studio bu`
+    description: `Studio bloom, we are a web agency based in the blue mountains that provide Website Design and Development for small businesses`,
+    author: `Studio Bloom`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
