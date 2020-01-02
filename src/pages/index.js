@@ -46,12 +46,12 @@ function IndexPage() {
               }}
             >
               <section alt="blue mountains scenery"
-                className="pt-20 pb-20 absolute bg-no-repeat bg-cover bg-black w-screen text-center sm:text-left" style={{ backgroundImage: `url(${BlueMountainsHeaderImage1})` }}>
+                className="pt-16 lg:pt-20 pb-20 absolute bg-no-repeat bg-cover bg-black w-screen text-center sm:text-left" style={{ backgroundImage: `url(${BlueMountainsHeaderImage1})` }}>
                 <div className="ml-16 mr-16 text-white">
                   <h1 className="text-6xl max-w-sm headerFont">website design/</h1>
                   <p className="text-6xl max-w-xl headerFont">content creation/</p>
                   <p className="text-6xl max-w-sm headerFont">& tech support</p>
-                  <div className="py-12">
+                  <div className="py-1 lg:py-12">
                     <img className="w-4 mr-2 inline-block" src={DownArrow} alt="down arrow icon" />
                     <span className="text-6sm">scroll down</span>
                   </div>
@@ -85,7 +85,7 @@ function IndexPage() {
                 <div className="w-full lg:w-1/3">
                   <img className="block ml-auto mr-auto rounded-full h-64" src={HeadShot} alt="picture of amanda" />
                 </div>
-                <div className="w-full lg:w-1/2 mt-6 lg:max-w-full max-w-sm">
+                <div className="w-full lg:w-1/2 mt-6 lg:max-w-full max-w-xs">
                   <h2 className="mb-8 text-4xl font-medium text-white">A bit about us...</h2>
                   <p className="mb-4">
                     Based in the Blue Mountains of Sydney we are a team of creative designers, developers and content creators.

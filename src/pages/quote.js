@@ -11,10 +11,10 @@ function QuotePage() {
         title="Contact"
       />
       <section className="bg-black w-screen ">
-        <form name="quote" className="mx-auto w-1/2 md:w-1/4 mb-4" method="post" data-netlify="true"
+        <form name="quote" className="mx-auto px-8 w-full md:w-1/2 lg:w-1/3 mb-4" method="post" data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <h1 className="text-center text-pink text-3xl mb-8">Get a Quote</h1>
+          <h1 className="text-left lg:text-center text-pink text-3xl mb-8">Get a Quote</h1>
           <p className="leading-loose mb-6 text-grey">
             Your details
           </p>

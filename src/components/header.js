@@ -49,7 +49,7 @@ function Header() {
               </Link>
             ))}
             <Link
-              className=" text-center block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white bg-red p-2 rounded w-40"
+              className="text-center block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white bg-red p-2 rounded w-40 hover:bg-hoverRed"
               key={`GET A QUOTE`}
               to={`/quote`}
             >
