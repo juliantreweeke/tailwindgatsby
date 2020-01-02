@@ -7,8 +7,8 @@ function QuotePage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Contact"
+        keywords={[`web design`, `web development`, `social media management`, `UX`, `UI`, `Web Agency`, `Blue Mountains`, `Sydney`]}
+        title="Quote"
       />
       <section className="bg-black w-screen ">
         <form name="quote" className="mx-auto px-8 w-full md:w-1/2 lg:w-1/3 mb-4" method="post" data-netlify="true"
