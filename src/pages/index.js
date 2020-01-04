@@ -81,7 +81,7 @@ function IndexPage() {
             <section className=" w-screen bg-black">
               <div className="flex flex-wrap justify-center pt-48 pb-48 text-white text-sm paragraphFont text-center lg:text-left max-w">
                 <div className="w-full lg:w-1/3">
-                  <img alt="picture of amanda" className="block ml-auto mr-auto rounded-full h-64" src={HeadShot} />
+                  <img alt="amanda" className="block ml-auto mr-auto rounded-full h-64" src={HeadShot} />
                 </div>
                 <div className="w-full lg:w-1/2 mt-6 lg:max-w-full max-w-xs">
                   <h2 className="mb-8 text-4xl font-medium text-white">A bit about us...</h2>

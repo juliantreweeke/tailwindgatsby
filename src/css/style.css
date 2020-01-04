@@ -6,6 +6,9 @@
 @tailwind base;
 
 
+.min-height-777 {
+  min-height:777px;
+}
 
 .min-height-210 {
   min-height:210px;

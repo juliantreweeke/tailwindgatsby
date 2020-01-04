@@ -29,7 +29,6 @@ function ServicesContainer() {
           <h2 className=" mb-16 text-4xl text-center font-medium ">Services we offer</h2>
           {data.allContentfulServices.edges.map(data => (
             <Service data={data.node} key={data.node.id}/>
-   
           ))}
         </section>
     )}

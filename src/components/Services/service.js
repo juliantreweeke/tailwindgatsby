@@ -25,7 +25,7 @@ const Service  = ({ data }) => {
   }}
 >
         <div className="bg-black p-6">
-          <div className="bg-white flex flex-col font-sans">
+          <div className="bg-white flex flex-col font-sans min-height-777 justify-center">
               <div className="container mx-auto px-8">
                   <main className="flex flex-col-reverse sm:flex-row jusitfy-between items-center py-12">
                       <div className="sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
