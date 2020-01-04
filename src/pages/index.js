@@ -13,9 +13,7 @@ import Grays from "../images/graysonlinelogo.jpeg";
 import Hireup from "../images/hireup.brand.jpg";
 import Squiggle from "../images/squiggle.png";
 import DownArrow from "../images/downarrow.png";
-import SocialMedia from "../images/socialmedia.jpg";
-import Website from "../images/website2.png";
-import UX from "../images/ux3.png";
+import Services from"../components/Services";
 
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
@@ -44,15 +42,15 @@ function IndexPage() {
               to={{
                 yPercent: 20,
               }}
-            >
+            > 
               <section alt="blue mountains scenery"
-                className="pt-16 lg:pt-20 pb-20 absolute bg-no-repeat bg-cover bg-black w-screen text-center sm:text-left" style={{ backgroundImage: `url(${BlueMountainsHeaderImage1})` }}>
-                <div className="ml-16 mr-16 text-white">
-                  <h1 className="text-6xl max-w-sm headerFont">website design/</h1>
-                  <p className="text-6xl max-w-xl headerFont">content creation/</p>
-                  <p className="text-6xl max-w-sm headerFont">& tech support</p>
-                  <div className="py-1 lg:py-12">
-                    <img className="w-4 mr-2 inline-block" src={DownArrow} alt="down arrow icon" />
+                className="pt-20 sm:pb-10 absolute bg-no-repeat bg-cover bg-black h-screen w-screen text-center sm:text-left" style={{ backgroundImage: `url(${BlueMountainsHeaderImage1})`, backgroundSize:`cover` }}>
+                <div className="lg:pt-4 ml-16 mr-16 text-white">
+                  <h1 className="text-5xl sm:text-6xl max-w-sm headerFont">website design/</h1>
+                  <p className="text-5xl sm:text-6xl max-w-xl headerFont">content creation/</p>
+                  <p className="text-5xl sm:text-6xl max-w-sm headerFont">& tech support</p>
+                  <div className="py-1">
+                    <img alt="down arrow icon" className="w-4 mr-2 inline-block" src={DownArrow} />
                     <span className="text-6sm">scroll down</span>
                   </div>
                 </div>
@@ -83,7 +81,7 @@ function IndexPage() {
             <section className=" w-screen bg-black">
               <div className="flex flex-wrap justify-center pt-48 pb-48 text-white text-sm paragraphFont text-center lg:text-left max-w">
                 <div className="w-full lg:w-1/3">
-                  <img className="block ml-auto mr-auto rounded-full h-64" src={HeadShot} alt="picture of amanda" />
+                  <img alt="picture of amanda" className="block ml-auto mr-auto rounded-full h-64" src={HeadShot} />
                 </div>
                 <div className="w-full lg:w-1/2 mt-6 lg:max-w-full max-w-xs">
                   <h2 className="mb-8 text-4xl font-medium text-white">A bit about us...</h2>
@@ -96,7 +94,7 @@ function IndexPage() {
                   <p className="mb-4">
                     We will save you time creating a seamless and professional digital experience so that you can get down to the business, of running your business.
                   </p>
-                  <img className="w-20 rotate180 mr-auto ml-auto block" src={Squiggle} alt="squiggle icon" />
+                  <img alt="squiggle icon" className="w-20 rotate180 mr-auto ml-auto block" src={Squiggle} />
                 </div>
               </div>
             </section>
@@ -153,64 +151,7 @@ function IndexPage() {
             </section>
           </Tween>
         </Scene>
-        <Scene
-          duration="60%"
-          offset={200}
-          triggerHook="onEnter"
-        >
-          <Tween
-            from={{
-              css: {
-                opacity: `0.1`,
-              },
-              ease: `Circ.easeOutExpo`,
-            }}
-            to={{
-              css: {
-                opacity: `1`,
-              },
-              ease: `Circ.easeOutExpo`,
-            }}
-          >
-            <section id="services" className="pt-16 bg-black text-white text-center text-2xl">
-              <h2 className=" mb-16 text-4xl text-center font-medium ">Services we offer</h2>
-              <div className="flex flex-wrap justify-center ml-auto mr-auto lg:mr-16 lg:ml-16 max-w-sm lg:max-w-full">
-                <div className="w-full lg:w-1/3 bg-red h-custom">
-                  <div className="pt-12 min-height-210">
-                    <p>WEBSITE DESIGN</p>
-                    <p>& DEVELOPMENT</p>
-                  </div>
-                  <a className="w-full bg-black rounded px-16 py-2 text-xl" href="https://www.dysphemic.com/music/" target="_blank">View</a>
-                </div>
-                <div className="w-full lg:w-1/3 bg-black h-custom">
-                  <img src={Website} className="h-full w-full" alt="Website Image" />
-                </div>
-                <div className="w-full lg:w-1/3 bg-pink h-custom">
-                  <div className="pt-12 min-height-210">
-                    <p>UX/UI DESIGN</p>
-                  </div>
-                  <a className="w-full bg-black rounded px-16 py-2 text-xl" href="https://thehappydoggo.com/" target="_blank">View</a>
-
-                </div>
-              </div>
-              <div className="flex flex-wrap justify-center ml-auto mr-auto lg:mr-16 lg:ml-16 max-w-sm lg:max-w-full">
-                <div className="w-full lg:w-1/3 h-custom">
-                  <img src={UX} className="h-full w-full" alt="Website Image" />
-                </div>
-                <div className="w-full bg-grey lg:w-1/3 h-custom">
-                  <div className="pt-12 min-height-210">
-                    <p>SOCIAL MEDIA CONTENT</p>
-                    <p>& MANAGEMENT</p>
-                  </div>
-                  <a className="w-full bg-black rounded px-16 py-2 text-xl" href="https://www.facebook.com/Dysphemicmusic/" target="_blank">View</a>
-                </div>
-                <div className="w-full lg:w-1/3 h-custom">
-                  <img src={SocialMedia} className="h-full w-full" alt="Social Media Image" />
-                </div>
-              </div>
-            </section>
-          </Tween>
-        </Scene>
+        <Services />
       </Controller>
     </Layout>
   );
