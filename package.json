@@ -54,7 +54,8 @@
     "eslint-plugin-react-hooks": "2.3.0",
     "prettier": "1.19.1",
     "tailwindcss": "1.1.4",
-    "typescript": "3.7.3"
+    "typescript": "3.7.3",
+    "dotenv": "^8.2.0"
   },
   "repository": {
     "type": "git",

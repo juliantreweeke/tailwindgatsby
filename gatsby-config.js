@@ -1,3 +1,21 @@
+require(`dotenv`).config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
+const contentfulConfig = {
+  spaceId: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  host: process.env.CONTENTFUL_HOST
+};
+
+const { spaceId, accessToken } = contentfulConfig;
+
+if (!spaceId || !accessToken) {
+  throw new Error(
+    `Contentful spaceId and the access token need to be provided.`
+  )
+};
+
 module.exports = {
   siteMetadata: {
     title: `studio bloom`,
@@ -7,10 +25,7 @@ module.exports = {
   plugins: [
       {
         resolve: `gatsby-source-contentful`,
-        options: {
-          spaceId: `amwkhm69zn1d`,
-          accessToken: `rBX02GtphVA5EES0J9lKbxbCEF-cObklkTsMgS9Z_bw`,
-        },
+        options: contentfulConfig,
       },
     `gatsby-plugin-react-helmet`,
     {
@@ -36,3 +51,4 @@ module.exports = {
     `gatsby-plugin-offline`
   ]
 };
+
