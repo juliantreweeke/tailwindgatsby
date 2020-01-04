@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 import BlueMountainsHeaderImage1 from "../images/BlueMountainsHeaderImage1.jpg";
 import DownArrow from "../images/downarrow.png";
 import AboutUs from "../components/aboutUs";
-import ClientList from"../components/ClientList";
+import ClientList from"../components/clientList";
 import Services from"../components/Services";
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
