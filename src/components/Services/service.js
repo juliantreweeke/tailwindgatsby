@@ -25,17 +25,17 @@ const Service  = ({ data }) => {
   }}
 >
         <div className="bg-black p-6">
-          <div className="bg-white flex flex-col font-sans min-height-777 justify-center">
+          <div className="bg-white flex flex-col font-sans min-height-600 justify-center">
               <div className="container mx-auto px-8">
                   <main className="flex flex-col-reverse sm:flex-row jusitfy-between items-center py-12">
                       <div className="sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
-                          <h2 className="uppercase text-4xl text-black text-secondary tracking-widest mb-6">{title}</h2>
-                          <p className="text-black leading-relaxed mb-12">{description}</p>
-                          <a className="text-lg text-center block md:inline-block mt-4 md:mt-0  no-underline text-white bg-black p-3 px-4 rounded w-60" href={link} target="_blank"
+                          <h2 className="uppercase text-2xl text-black text-secondary tracking-widest mb-6">{title}</h2>
+                          <p className="text-black leading-relaxed mb-12 text-lg">{description}</p>
+                          <a className="text-base text-center block md:inline-block mt-4 md:mt-0  no-underline text-white bg-black p-3 px-4 rounded w-60" href={link} target="_blank"
                       >SHOW EXAMPLE</a>
                       </div>
                       <div className="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
-                      {image.file.url && <img alt={title} className="max-height-345 w-full" src={image.file.url} />}
+                      {image.file.url && <img alt={title} className="w-full lg:w-8/12" src={image.file.url} />}
                       </div>
                   </main>
               </div>
