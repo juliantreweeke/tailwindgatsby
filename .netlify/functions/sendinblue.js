@@ -8,11 +8,10 @@ exports.handler = async (event, context, callback) => {
      method: event.httpMethod,
      headers: {
        "Content-Type": "application/json",
-        "api-key": `${process.env.SEND_IN_BLUE_API_KEY}`,
+       "Authorization": `api-key ${process.env.SEND_IN_BLUE_API_KEY}`,
     },
      body: event.body
     })
-    debugger;
      let data = await response.json()
      console.log('sign up! ', data)
      await pass(data)

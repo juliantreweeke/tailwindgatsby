@@ -15,7 +15,7 @@ function Signup() {
         }
        }   
     fetch(`../../.netlify/functions/sendinblue`, {
-      method: `POST`,
+      method: 'POST',
       body: JSON.stringify(data)
     })
     .then(() => alert(`Form Sent!`))
