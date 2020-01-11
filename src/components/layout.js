@@ -18,10 +18,10 @@ function Layout({ children }) {
             <img src={Email} className="w-4 inline-block mr-2 pb-1" alt="email icon" />
             <a
               className="pt-4 no-underline text-white paragraphFont text-sm"
-              href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=juliantreweeke@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello@thestudiobloom.com"
               target="_blank"
             >
-              info@thestudiobloom.com
+              hello@thestudiobloom.com
           </a>
           </div>
         </nav>
