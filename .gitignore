@@ -13,6 +13,6 @@ yarn-error.log
 # deployment-specific configs
 now.json
 
-.env.development
-.end.production
+.env*
+
 
