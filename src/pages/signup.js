@@ -35,7 +35,7 @@ function Signup() {
           name="quote"
           onSubmit={handleSubmit}
         >
-          <h1 className="text-left lg:text-center text-pink text-3xl mb-8">SIGN UP TO OUR EMAIL LIST</h1>
+          <h1 className="text-left lg:text-center text-pink text-3xl mb-8">SIGN UP TO OUR EMAIL LIST BRUH</h1>
           <p className="leading-loose mb-6 text-grey">
             Your details
           </p>
