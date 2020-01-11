@@ -13,7 +13,7 @@ function Signup() {
         attributes: {
           name
         }
-       }
+       }   
     fetch(`../../.netlify/functions/sendinblue`, {
       method: `POST`,
       body: JSON.stringify(data)

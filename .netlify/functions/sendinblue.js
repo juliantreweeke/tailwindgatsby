@@ -12,6 +12,7 @@ exports.handler = async (event, context, callback) => {
     },
      body: event.body
     })
+    debugger;
      let data = await response.json()
      console.log('sign up! ', data)
      await pass(data)
@@ -24,3 +25,7 @@ exports.handler = async (event, context, callback) => {
     await pass(error)
    }
   }
+
+
+
+

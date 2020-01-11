@@ -49,37 +49,37 @@ function QuotePage() {
                 </span>
               </label>
               <label className="text-grey w-full lg:w-1/2 mb-4">
-                <input name="web review" className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <input name="web development" className="mr-2 leading-tight bg-black border" type="checkbox" />
                 <span>
-                  Web Review
+                  Web Development
                 </span>
               </label>
             </div>
             <div className="flex flex-wrap  w-full">
               <label className="text-grey w-full lg:w-1/2 mb-4">
-                <input name="mobile design" className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <input name="UX/UI" className="mr-2 leading-tight bg-black border" type="checkbox" />
                 <span>
-                  Mobile Design
+                  UX/UI
                 </span>
               </label>
-              <label className="text-grey w-full lg:w-1/2 mb-4">
-                <input name="copywriting" className="mr-2 leading-tight bg-black border" type="checkbox" />
-                <span>
-                  Copywriting
-                </span>
-              </label>
-            </div>
-            <div className="flex flex-wrap  w-full">
               <label className="text-grey w-full lg:w-1/2 mb-4">
                 <input name="social media" className="mr-2 leading-tight bg-black border" type="checkbox" />
                 <span>
                   Social Media
                 </span>
               </label>
+            </div>
+            <div className="flex flex-wrap  w-full">
               <label className="text-grey w-full lg:w-1/2 mb-4">
-                <input name="UX/UI" className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <input name="sound design" className="mr-2 leading-tight bg-black border" type="checkbox" />
                 <span>
-                  UX/UI
+                  Sound Design
+                </span>
+              </label>
+              <label className="text-grey w-full lg:w-1/2 mb-4">
+                <input name="copywriting" className="mr-2 leading-tight bg-black border" type="checkbox" />
+                <span>
+                  Copywriting
                 </span>
               </label>
             </div>
