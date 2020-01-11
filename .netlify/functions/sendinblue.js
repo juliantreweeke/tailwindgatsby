@@ -3,12 +3,11 @@ exports.handler = async (event, context, callback) => {
     try {
       let response = await fetch("https://api.sendinblue.com/v3/contacts", 
     {
-    mode: `cors`,
-     credentials: `same-origin`,
-     method: event.httpMethod,
+     credentials: 'same-origin',
+     method: 'POST',
      headers: {
        "Content-Type": "application/json",
-       "Authorization": `api-key ${process.env.SEND_IN_BLUE_API_KEY}`,
+       "api-key":`${process.env.SEND_IN_BLUE_API_KEY}`,
     },
      body: event.body
     })
