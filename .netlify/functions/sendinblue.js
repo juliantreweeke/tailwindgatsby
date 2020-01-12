@@ -2,15 +2,16 @@ exports.handler = async (event, context, callback) => {
     console.log(event);
     const pass = (body) => {callback(null, {statusCode: 200, body: JSON.stringify(body)})}
     try {
+      console.log('trying');
       let response = await fetch("https://api.sendinblue.com/v3/contacts", 
     {
      credentials: 'same-origin',
-     method: 'POST',
+     method: event.httpMethod,
      headers: {
        "Content-Type": "application/json",
        "api-key":`${process.env.SEND_IN_BLUE_API_KEY}`,
     },
-     body: JSON.parse(event.body)
+     body: event.body
     })
      let data = await response.json()
      console.log('sign up! ', data)
