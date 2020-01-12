@@ -1,61 +1,29 @@
-require('dotenv').config();
-// const fetch = require('node-fetch');
-const { SEND_IN_BLUE_API_KEY } = process.env
-exports.handler = async event => {
-  const email = JSON.parse(event.body).payload.email
-  console.log(`Recieved a submission: ${email}`)
-  return fetch('https://api.sendinblue.com/v3/contacts', {
-    method: 'POST',
-    headers: {
-      "Content-Type": "application/json",
-      "api-key":`${SEND_IN_BLUE_API_KEY}`,
-   },
-    body: JSON.stringify({ email }),
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log(`Submitted to send in blue:\n ${data}`)
+exports.handler = async (event, context, callback) => {
+    console.log(event);
+    const pass = (body) => {callback(null, {statusCode: 200, body: JSON.stringify(body)})}
+    try {
+      let response = await fetch("https://api.sendinblue.com/v3/contacts", 
+    {
+     credentials: 'same-origin',
+     method: 'POST',
+     headers: {
+       "Content-Type": "application/json",
+       "api-key":`${process.env.SEND_IN_BLUE_API_KEY}`,
+    },
+     body: event.body
     })
-    .catch(error => ({ statusCode: 422, body: String(error) }))
-}
-
-
-
-
-
-
-
-
-
-// require(`dotenv`).config({
-//   path: `.env.${process.env.NODE_ENV}`
-// });
-
-// exports.handler = async (event, context, callback) => {
-//     const pass = (body) => {callback(null, {statusCode: 200, body: JSON.stringify(body)})}
-//     try {
-//       let response = await fetch("https://api.sendinblue.com/v3/contacts", 
-//     {
-//      credentials: 'same-origin',
-//      method: 'POST',
-//      headers: {
-//        "Content-Type": "application/json",
-//        "api-key":`${process.env.SEND_IN_BLUE_API_KEY}`,
-//     },
-//      body: event.body
-//     })
-//      let data = await response.json()
-//      console.log('sign up! ', data)
-//      await pass(data)
-//    } catch(err) {
-//      console.log('error with email sign up'. err)
-//        let error = {
-//          statusCode: err.statusCode || 500,
-//          body: JSON.stringify({error: err.message})
-//     }
-//     await pass(error)
-//    }
-//   }
+     let data = await response.json()
+     console.log('sign up! ', data)
+     await pass(data)
+   } catch(err) {
+     console.log('error with email sign up'. err)
+       let error = {
+         statusCode: err.statusCode || 500,
+         body: JSON.stringify({error: err.message})
+    }
+    await pass(error)
+   }
+  }
 
 
   // const handleSubmit = (e) => {
