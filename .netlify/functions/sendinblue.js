@@ -1,30 +1,33 @@
-exports.handler = async (event, context, callback) => {
-    console.log(event);
-    const pass = (body) => {callback(null, {statusCode: 200, body: JSON.stringify(body)})}
-    try {
-      console.log('trying');
-      let response = await fetch("https://api.sendinblue.com/v3/contacts", 
-    {
-     credentials: 'same-origin',
-     method: event.httpMethod,
-     headers: {
-       "Content-Type": "application/json",
-       "api-key":`${process.env.SEND_IN_BLUE_API_KEY}`,
-    },
-     body: event.body
-    })
-     let data = await response.json()
-     console.log('sign up! ', data)
-     await pass(data)
-   } catch(err) {
-     console.log('error with email sign up'. err)
-       let error = {
-         statusCode: err.statusCode || 500,
-         body: JSON.stringify({error: err.message})
-    }
-    await pass(error)
-   }
-  }
+// exports.handler = async (event, context, callback) => {
+//     console.log(event);
+//     const pass = (body) => {callback(null, {statusCode: 200, body: JSON.stringify(body)})}
+//     try {
+//       console.log('trying');
+//       let response = await fetch("https://api.sendinblue.com/v3/contacts", 
+//     {
+//      credentials: 'same-origin',
+//      method: event.httpMethod,
+//      headers: {
+//        "Content-Type": "application/json",
+//        "api-key":`${process.env.SEND_IN_BLUE_API_KEY}`,
+//     },
+//      body: event.body
+//     })
+//      let data = await response.json()
+//      console.log('sign up! ', data)
+//      await pass(data)
+//    } catch(err) {
+//      console.log('error with email sign up'. err)
+//        let error = {
+//          statusCode: err.statusCode || 500,
+//          body: JSON.stringify({error: err.message})
+//     }
+//     await pass(error)
+//    }
+//   }
+
+
+
 
 
   // const handleSubmit = (e) => {
@@ -84,38 +87,52 @@ exports.handler = async (event, context, callback) => {
   // };
 
   
-  // module.exports.handler = (event, context, callback) => {
+  module.exports.handler = (event, context, callback) => {
   
-  //     const formData = JSON.parse(event.body);
-  //     const email = formData.email;
-  //     let errorMessage = null;
+      const formData = JSON.parse(event.body);
+      const email = formData.email;
+      let errorMessage = null;
   
-  //     if (!formData) {
-  //         errorMessage = "No form data supplied";
-  //         console.log(errorMessage);
-  //         callback(errorMessage);
-  //     }
+      if (!formData) {
+          errorMessage = "No form data supplied";
+          console.log(errorMessage);
+          callback(errorMessage);
+      }
   
-  //     if (!email) {
-  //         errorMessage = "No EMAIL supplied";
-  //         console.log(errorMessage);
-  //         callback(errorMessage);
-  //     }
+      if (!email) {
+          errorMessage = "No EMAIL supplied";
+          console.log(errorMessage);
+          callback(errorMessage);
+      }
   
-  //     const subscriber = JSON.stringify(formData);
-  //     console.log("Sending data to sendinBlue", subscriber);
+      const subscriber = JSON.stringify(formData);
+      console.log("Sending data to sendinBlue", subscriber);
 
-  //     fetch(`https://api.sendinblue.com/v3/contacts`, {
-  //     method: 'POST',
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       "api-key":`${process.env.SEND_IN_BLUE_API_KEY}`,
-  //    },
-  //     body: subscriber
-  //   })
-  //   .then(response => callback(null, {statusCode: 200, body: JSON.stringify(response)})
-  //   .catch(error => callback(error))
-  //  };
+    //   fetch(`https://api.sendinblue.com/v3/contacts`, {
+    //   method: 'POST',
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     "api-key":`${process.env.SEND_IN_BLUE_API_KEY}`,
+    //  },
+    //   body: subscriber
+    // })
+    // .then(response => callback(null, {statusCode: 200, body: JSON.stringify(response)})
+    // .catch(error => callback(error))
+    fetch('https://api.sendinblue.com/v3/contacts', {
+      method: 'POST', // or 'PUT'
+      headers: {
+        'Content-Type': 'application/json',
+        "api-key":`${process.env.SEND_IN_BLUE_API_KEY}`
+      },
+      body: subscriber,
+    })
+    .then((response) => callback(null, {statusCode: 200, body: JSON.stringify(response)})
+    .catch((error) => {
+      console.log(error)
+      callback(error);
+    }))
+  };
+
 
 
 
