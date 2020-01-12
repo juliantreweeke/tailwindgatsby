@@ -9,7 +9,11 @@ function Signup() {
 
   const handleSubmit = (e) => {
     const data = {
-        email
+        email,
+        attributes: {
+          name
+        },
+        listIds: [5]
        }   
     fetch(`../../.netlify/functions/emailsignup`, {
       method: 'POST',
