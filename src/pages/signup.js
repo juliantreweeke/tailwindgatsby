@@ -11,7 +11,7 @@ function Signup() {
     const data = {
         email,
         attributes: {
-          name
+          'FIRSTNAME':name
         },
         listIds: [5]
        }   
