@@ -10,7 +10,7 @@ exports.handler = async (event, context, callback) => {
        "Content-Type": "application/json",
        "api-key":`${process.env.SEND_IN_BLUE_API_KEY}`,
     },
-     body: event.body
+     body: JSON.parse(event.body)
     })
      let data = await response.json()
      console.log('sign up! ', data)
