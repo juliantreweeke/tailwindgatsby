@@ -13,10 +13,10 @@ function IndexPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`web design`, `web development`, `social media management`, `UX`, `UI`, `Web Agency`, `Blue Mountains`, `Sydney`]}
+        keywords={[`web design`,`web site`,`website`, `web development`, `social media management`, `UX`, `UI`, `Web Agency`, `Blue Mountains`, `Sydney`, `digital marketing`, `online store`, `search engines`, `simple website`, `development company`, `building your website`, `great website`, `user experience`, `mobile responsive`, `search engine optimisation`, `web design company`, `online shop`, `design and development`, `online marketing`, `content management systems`, `developers and digital`, `ecommerce websites`, `businesses grow`, `small business`]}
         title="Home"
       />
-      <Controller>
+      <Controller> 
         <Scene
           duration="250%"
           indicators={false}
@@ -35,9 +35,9 @@ function IndexPage() {
               }}
             > 
               <section alt="blue mountains scenery"
-                className="pt-20 sm:pb-10 absolute bg-no-repeat bg-cover bg-black h-screen w-screen text-center sm:text-left" style={{ backgroundImage: `url(${BlueMountainsHeaderImage1})`, backgroundSize:`cover` }}>
+                className="pt-12 sm:pb-10 absolute bg-no-repeat bg-cover bg-black h-screen w-screen text-center sm:text-left" style={{ backgroundImage: `url(${BlueMountainsHeaderImage1})`, backgroundSize:`cover` }}>
                 <div className="lg:pt-4 ml-16 mr-16 text-white">
-                  <h1 className="text-5xl sm:text-6xl max-w-sm headerFont">website design/</h1>
+                  <h1 className="text-5xl sm:text-6xl max-w-xs headerFont">web design/</h1>
                   <p className="text-5xl sm:text-6xl max-w-xl headerFont">content creation/</p>
                   <p className="text-5xl sm:text-6xl max-w-sm headerFont">& tech support</p>
                   <div className="py-1">

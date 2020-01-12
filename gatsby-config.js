@@ -19,7 +19,7 @@ if (!spaceId || !accessToken) {
 module.exports = {
   siteMetadata: {
     title: `studio bloom`,
-    description: `Studio bloom, we are a web agency based in the blue mountains that provide Website Design and Development for small businesses`,
+    description: `Studio bloom, we are a web design and development agency based in the blue mountains of Sydney. We help small to medium businesses level up their online presence with strategically designed websites, digital products, functional sales funnels and email marketing.`,
     author: `Studio Bloom`
   },
   plugins: [

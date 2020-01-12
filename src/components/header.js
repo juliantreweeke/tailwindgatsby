@@ -36,6 +36,10 @@ function Header() {
                 title: `HOME`
               },
               {
+                route: `#aboutus`,
+                title: `ABOUT US`
+              },
+              {
                 route: `#services`,
                 title: `SERVICES`
               }

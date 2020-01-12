@@ -26,7 +26,7 @@ const AboutUs  = () => {
               ease: `Circ.easeOutExpo`,
             }}
           >
-            <section className=" w-screen bg-black">
+            <section className="h-screen w-screen bg-black" id="aboutus">
               <div className="flex flex-wrap justify-center pt-48 pb-48 text-white text-sm paragraphFont text-center lg:text-left max-w">
                 <div className="w-full lg:w-1/3">
                   <img alt="amanda" className="block ml-auto mr-auto rounded-full h-64" src={HeadShot} />
@@ -34,14 +34,13 @@ const AboutUs  = () => {
                 <div className="w-full lg:w-1/2 mt-6 lg:max-w-full max-w-xs">
                   <h2 className="mb-8 text-4xl font-medium text-white">A bit about us...</h2>
                   <p className="mb-4">
-                    Based in the Blue Mountains of Sydney we are a team of creative designers, developers and content creators.
+                    Based in the Blue Mountains of Sydney we are a team of creative web designers, developers and content creators.
                   </p>
                   <p className="mb-4">
-                    Extensive experience across agency, startup and the corporate sector come together to benefit you, no matter what your project requires.
-                  </p>
+                    We help small to medium business owners and entrepreneurs to level up their online presence with strategically designed websites, digital products, functional sales funnels and email marketing.</p>
                   <p className="mb-4">
                     We will save you time creating a seamless and professional digital experience so that you can get down to the business, of running your business.
-                  </p>
+                  </p> 
                   <img alt="squiggle icon" className="w-20 rotate180 mr-auto ml-auto block" src={Squiggle} />
                 </div>
               </div>
