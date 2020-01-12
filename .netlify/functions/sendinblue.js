@@ -1,5 +1,5 @@
 require('dotenv').config();
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 const { SEND_IN_BLUE_API_KEY } = process.env
 exports.handler = async event => {
   const email = JSON.parse(event.body).payload.email
