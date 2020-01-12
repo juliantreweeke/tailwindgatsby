@@ -11,7 +11,7 @@ function Signup() {
     const data = {
         email
        }   
-    fetch(`../../.netlify/functions/sendinblue`, {
+    fetch(`../../.netlify/functions/emailsignup`, {
       method: 'POST',
       body: JSON.stringify(data)
     })
@@ -19,24 +19,6 @@ function Signup() {
     .catch(error => alert(error))
     e.preventDefault();
    }
-
-  //  const handleSubmit = (e) => {
-  //   const data = {
-  //       email
-  //      }   
-  //   fetch(`https://api.sendinblue.com/v3/contacts`, {
-  //     method: 'POST',
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       "api-key":`${process.env.SEND_IN_BLUE_API_KEY}`,
-  //    },
-  //     body: JSON.stringify(data)
-  //   })
-  //   .then(() => alert(`Form Sent!`))
-  //   .catch(error => alert(error))
-  //   e.preventDefault();
-  //  }
-
   
   return (
     <Layout>
