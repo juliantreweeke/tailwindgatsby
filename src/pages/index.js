@@ -35,8 +35,8 @@ function IndexPage() {
               }}
             > 
               <section alt="blue mountains scenery"
-                className="pt-12 sm:pb-10 absolute bg-no-repeat bg-cover bg-black h-screen w-screen text-center sm:text-left" style={{ backgroundImage: `url(${BlueMountainsHeaderImage1})`, backgroundSize:`cover` }}>
-                <div className="lg:pt-4 ml-16 mr-16 text-white">
+                className="pt-20 md:pt-16 lg:pt-12 sm:pb-10 absolute bg-no-repeat bg-cover bg-black h-screen w-screen text-center sm:text-left" style={{ backgroundImage: `url(${BlueMountainsHeaderImage1})`, backgroundSize:`cover` }}>
+                <div className="lg:pt-8 ml-16 mr-16 text-white">
                   <h1 className="text-5xl sm:text-6xl max-w-xs headerFont">web design/</h1>
                   <p className="text-5xl sm:text-6xl max-w-xl headerFont">content creation/</p>
                   <p className="text-5xl sm:text-6xl max-w-sm headerFont">& tech support</p>
