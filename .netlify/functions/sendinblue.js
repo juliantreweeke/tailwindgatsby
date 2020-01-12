@@ -85,7 +85,7 @@
      
       
   // };
-
+  const fetch = require('node-fetch');
   
   module.exports.handler = (event, context, callback) => {
   
