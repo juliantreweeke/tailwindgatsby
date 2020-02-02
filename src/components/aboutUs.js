@@ -26,8 +26,8 @@ const AboutUs  = () => {
               ease: `Circ.easeOutExpo`,
             }}
           >
-            <section className="h-screen w-screen bg-black" id="aboutus">
-              <div className="flex flex-wrap justify-center pt-48 pb-48 text-white text-sm paragraphFont text-center lg:text-left max-w">
+            <section className="w-screen bg-black" id="aboutus">
+              <div className="flex flex-wrap justify-center pt-48 pb-48 lg:pb-56 text-white text-sm paragraphFont text-center lg:text-left max-w">
                 <div className="w-full lg:w-1/3">
                   <img alt="amanda" className="block ml-auto mr-auto rounded-full h-64" src={HeadShot} />
                 </div>
